@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weather App</h1>
+        <div class="weather-card">
+            <div class="controls">
+                <div class="search-btn">
+                    <input type="search" class="search" placeholder="Search your city...">
+                    <button class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 search-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>                                                  
+                    </button>
+                </div>
+
+                <div class="dataBox">
+                    <div class="weather-icon">
+                        <img src="asset/thunderstorm.png" alt="cloud" class="icon">
+                    </div>
+    
+                    <div class="temperature-section">
+                        <p class="temperature">38 °C</p>
+                        <p class="city">Mumbai</p>
+                    </div>
+    
+                    <div class="details-section">
+                        <div class="humidity">
+                            <img src="asset/wave.png" alt="wave" class="wave-icon">
+                            <div class="humidity-details">
+                                <p class="humidity-percentage">99%</p>
+                            <p class="humidity-text">Humidity</p>
+                            </div>
+                        </div>
+    
+                        <div class="wind">
+                            <img src="asset/wind.png" alt="wind" class="wind-icon">
+                            <div class="wind-details">
+                                <p class="wind-percentage">0.78 km/h</p>
+                            <p class="wind-text">Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

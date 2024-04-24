@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(195deg, #345678, #987656);
+}
+
+.title {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  background: linear-gradient(678deg, #000000, #780000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.weather-card {
+  max-height: 40rem;
+  width: 35rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.controls {
+  width: inherit;
+  height: 8rem;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.search {
+  width: 25rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search:focus,
+.btn:focus {
+  outline: none;
+}
+
+.search-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.dataBox {
+  display: none;
+}
+
+.weather-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.icon {
+  height: 8rem;
+  width: 8rem;
+}
+
+.temperature-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.temperature,
+.city {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.details-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  flex-direction: row;
+}
+
+.wave-icon,
+.wind-icon {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.humidity-percentage,
+.humidity-text,
+.wind-percentage,
+.wind-text {
+  font-size: 1.4rem;
+  color: #fff;
+}
