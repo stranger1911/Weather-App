@@ -17,10 +17,24 @@
   background: linear-gradient(195deg, #345678, #987656);
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-top: -5rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
+}
+
 .title {
   margin-bottom: 5rem;
   font-size: 5rem;
-  background: linear-gradient(678deg, #000000, #780000, #000000);
+  background: linear-gradient(135deg, #00feba, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -129,4 +143,26 @@
 .wind-text {
   font-size: 1.4rem;
   color: #fff;
+}
+
+@media (max-width: 500px) {
+  .container {
+    justify-content: start;
+  }
+
+  .title {
+    margin-top: 35px;
+    font-size: 4rem;
+  }
+
+  .weather-card {
+    width: 90vmin;
+  }
+
+  .logo-icon {
+    margin-top: -1rem;
+    margin-left: 2rem;
+    height: 7rem;
+    width: 7rem;
+  }
 }
